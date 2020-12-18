@@ -27,7 +27,7 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
-for each will do the action for each instance of an object or array
+for each will do the action for each instance of an object or array, map makes a new one with the conditions you set
 
 2. Explain the difference between a callback and a higher order function.
 

@@ -64,10 +64,11 @@ const zooAnimals = [
 //   this.squareArray.push(value * value);
 // }, this);
 
-  function animalNames(zooAnimals){
-    // zooAnimals.forEach(function(value) {
-    //   return (`name: ${animal_name}, scientific: ${scientific_name}`)
-    // },0
+  function animalNames(arr){
+   arr.forEach(function(name, scientific_name){
+     (`name: ${name}, scientific: ${scientific_name}`)
+   })
+   return arr
   }
   
 
@@ -78,10 +79,10 @@ const zooAnimals = [
   */
 
   function lowerCaseNames(array){
-    let  lowercase =array.map(function(name){
-      array.name.toLowercase()
+    let  lowercase =array.map(function(){
+      array.animal_name.toLowercase()
     })
-    return toLowercase
+    return lowercase
   }
   
   
