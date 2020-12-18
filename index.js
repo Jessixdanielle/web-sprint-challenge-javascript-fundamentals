@@ -65,10 +65,12 @@ const zooAnimals = [
 // }, this);
 
   function animalNames(arr){
-   arr.forEach(function(name, scientific_name){
-     (`name: ${name}, scientific: ${scientific_name}`)
-   })
-   return arr
+    let animalNames=[];
+   let each = arr.forEach(element => {
+     animalNames.push(`name: ${element.animal_name}, scientific: ${element.scientific_name}`)
+   });
+   return animalNames
+
   }
   
 
@@ -78,11 +80,12 @@ const zooAnimals = [
   For example: ['jackal, asiatic', .....]
   */
 
-  function lowerCaseNames(array){
-    let  lowercase =array.map(function(){
-      array.animal_name.toLowercase()
-    })
-    return lowercase
+  function lowerCaseNames(arr){
+    let  lowercase =[];
+    arr.map(function(thing) {
+      lowercase.push(thing.animal_name.toLowerCase())
+    });
+    return lowercase;
   }
   
   
@@ -91,8 +94,12 @@ const zooAnimals = [
   Using lowPopulationAnimals use .filter() to create a new array of objects which contains only the animals with a population of less than 5.
   */
 
-  function lowPopulationAnimals(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowPopulationAnimals(arr){
+    
+    const lowpop=arr.filter(function(thing){
+      return thing.population <5;
+    })
+    return lowpop;
   }
   
 
@@ -102,9 +109,11 @@ const zooAnimals = [
   Remember the reduce method takes two arguments: a callback (which itself takes two args - the accumulator and the item), and an initial value for the count.
   */
 
-  function USApop(/*Your Code Here*/){
-    /*Your Code Here*/
-  }
+ function USApop(arr) {
+  let pop = arr.reduce(function(counter, thing)
+  { return counter + (thing.population)},0);
+  return pop
+}
   
   
   // 🦁🦁🦁 Callbacks 🦁🦁🦁  
@@ -192,7 +201,7 @@ return  this.length * this.width *this.height
   Create an object called cuboid that uses the new keyword to use our CuboidMaker constructor
   Add properties and values of length: 4, width: 5, and height: 5 to cuboid. */
 
-const cuboid = new CuboidMaker(4, 5,5)
+const cuboid = new CuboidMaker({length:4, width:5,height:5})
 
 
 
