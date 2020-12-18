@@ -27,13 +27,23 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+for each will do the action for each instance of an object or array
+
 2. Explain the difference between a callback and a higher order function.
+
+They are the same
 
 3. What is closure?
 
+closure is when a function is reaching outside of itself to obtain a variable
+
 4. Describe the four rules of the 'this' keyword.
 
+global is js itself, explicit you tell it what to bind to, implicit is implied what it binds to, and new binds to the new instance of the object
+
 5. Why do we need super() in an extended class?
+
+the super gets the info from the parent function to use inside of it, without super it wont work
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
