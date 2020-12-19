@@ -19,7 +19,7 @@ myFunction();
 
 // Because a nested function is a higher order function, and can take variables from outside of it for it to use
 
-
+   
 
 /* 🚀🚀🚀 Task 2: Counter 🚀🚀🚀 */
 /* Use summation to do the following:
